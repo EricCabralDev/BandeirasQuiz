@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B19401"
+    tools:context=".RankingActivity">
+
+    <TextView
+        android:id="@+id/tv_nome"
+        android:layout_width="373dp"
+        android:layout_height="103dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Nome nome da nome"
+        android:textAlignment="center"
+        android:textColor="#00FF04"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/tv_pontuacao"
+        android:layout_width="178dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:text="Pontos: NULL"
+        android:textAlignment="center"
+        android:textColor="#00FF04"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/btn_reiniciar"
+        android:layout_width="295dp"
+        android:layout_height="81dp"
+        android:backgroundTint="#153CC8"
+        android:text="Reiniciar o Quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <Button
+        android:id="@+id/btn_inicio"
+        android:layout_width="295dp"
+        android:layout_height="81dp"
+        android:backgroundTint="#153CC8"
+        android:text="Voltar para o inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reiniciar"
+        app:layout_constraintVertical_bias="0.234" />
+</androidx.constraintlayout.widget.ConstraintLayout>

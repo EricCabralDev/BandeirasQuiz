@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B19401"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/tv_pergunta"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Você sabe que país é este?"
+        android:textAlignment="center"
+        android:textColor="#00FF04"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ImageView
+        android:id="@+id/iv_bandeira"
+        android:layout_width="388dp"
+        android:layout_height="241dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        app:srcCompat="@drawable/usa" />
+
+    <RadioGroup
+        android:id="@+id/rdgrp_opcoes"
+        android:layout_width="375dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bandeira">
+
+        <RadioButton
+            android:id="@+id/rdbtn_op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Itália"
+            android:textColor="#0022FF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Brasil"
+            android:textColor="#0022FF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="China"
+            android:textColor="#0022FF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Estados Unidos"
+            android:textColor="#0022FF"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_responder"
+        android:layout_width="221dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#153CC8"
+        android:fontFamily="serif"
+        android:text="Responder"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+</androidx.constraintlayout.widget.ConstraintLayout>
